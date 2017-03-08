@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+	<html>
+	<head>
+		<title></title>
+	</head>
+	<body>
+	<div>
+		<ul>
+	{% for good in goods %}
+	<a href="/good/{{good.id}}">
+		
+		<li>{{good.name}} <span>{{good.price}} рублей</span></li>
+
+    <img src="{{good.image}}">
+    <br>
+	</a>
+    
+	{% endfor %}
+	</ul>
+	<span> </span>   </div>
+	</body>
+	</html>	
